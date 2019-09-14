@@ -82,13 +82,13 @@ const data = {
 //   .catch(err => console.log(err));
 
 // PUT data (update user)
-// http
-//   .put('https://jsonplaceholder.typicode.com/users/2', data) //returns a promise
-//   .then(data => console.log(data))
-//   .catch(err => console.log(err));
-
-// Delete User
 http
-  .delete('https://jsonplaceholder.typicode.com/users/2') //returns a promise
+  .put('https://jsonplaceholder.typicode.com/users/2', data) //returns a promise
   .then(data => console.log(data))
   .catch(err => console.log(err));
+
+// Delete User
+// http
+//   .delete('https://jsonplaceholder.typicode.com/users/2') //returns a promise
+//   .then(data => console.log(data))
+//   .catch(err => console.log(err));
